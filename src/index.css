@@ -1,0 +1,135 @@
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Proza+Libre:wght@400;600&family=Cormorant+Upright:wght@300;400;500;600;700&family=Special+Elite&display=swap');
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+
+
+:root {
+    /* Quitar el icono por defecto y poner uno personalizado */
+  .swiper-button-next::after, 
+  .swiper-button-prev::after {
+    display: none; /* Esto quita la flecha estándar de Swiper */
+  }
+
+  .swiper-button-next, 
+  .swiper-button-prev {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .swiper-button-next:hover {
+    background-color: white;
+    transform: scale(1.1);
+  }
+}
+
+@theme {
+  /* Paleta Vintage Premium */
+  --color-v-bg: #fdfcf9;       /* Fondo crema muy suave */
+  --color-v-text: #4a4238;     /* Marrón topo oscuro para texto */
+  --color-v-accent: #b89c7d;   /* Dorado suave / Beige oscuro */
+  --color-v-border: #e2dccf;   /* Color sutil para líneas divisorias */
+  
+  --color-vc-bg: #7BACDD;       /* Fondo crema muy suave */
+  --color-vc-text: #7BACDD;     /* Marrón topo oscuro para texto */
+  --color-vc-accent: #b89c7d;   /* Dorado suave / Beige oscuro */
+  --color-vc-border: #e5e7eb;   /* Color sutil para líneas divisorias */
+
+  /* Tipografías */
+  --font-serif: "Cormorant Garamond", serif; /* Para nombres y títulos */
+  --font-sans: "Proza Libre", sans-serif;    /* Para cuerpo de texto y detalles */
+  --font-text: "Cormorant Upright", serif; /* Para citas y detalles decorativos */
+  --font-text-2: "Special Elite", monospace; /* Para detalles vintage tipo máquina de escribir */
+
+
+
+  /* ANIMACIONES */
+
+  --animate-fade-in: fade-in 1s ease-out;
+  --animate-pulse-slow: pulse-text 2s ease-in-out infinite;
+  --animate-scale-up: scale-up 0.3s ease-out;
+  --animate-lightrotation: lightrotation 3s linear infinite;
+  --animate-shine: shine 3s infinite;
+  --animate-focus: soft-focus 1.5s ease-out infinite;
+  --animate-flip: flip 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+/* Utilidad para bordes elegantes tipo la demo */
+@utility v-border-frame {
+  border: 1px solid var(--color-v-border);
+  padding: 2rem;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px; right: 5px; bottom: 5px; left: 5px;
+    border: 1px solid var(--color-v-border);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-text {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15); /* Se hace un 15% más grande */
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes lightrotation {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@keyframes shine {
+  0% { background-position: -200%; }
+  100% { background-position: 200%; }
+}
+
+@keyframes soft-focus {
+  0%, 100% { 
+    filter: blur(2px); 
+    opacity: 0;
+    letter-spacing: 0.5em; 
+  }
+  50% { 
+    filter: blur(0); 
+    opacity: 1;
+    letter-spacing: 0.2em; 
+  }
+}
+
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateX(-90deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}

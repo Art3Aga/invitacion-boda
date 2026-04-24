@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 import nuestrafoto from '../assets/NuestraFoto.jpg';
 import marcovintage from '../assets/vintage-frame-neutral.png';
-import cintaimg from '../assets/cinta.png';
 import ampersandimg from '../assets/ampersand.png';
 import divisorimg from '../assets/divisor.png';
 import fotolugar from '../assets/al horno2.jpg';

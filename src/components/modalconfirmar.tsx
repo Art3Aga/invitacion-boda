@@ -13,14 +13,12 @@ export const ModalConfirmar: React.FC<ModalConfirmarProps> = ({ isOpen, onClose,
   const [asiste, setAsiste] = useState<boolean | null>(null);
   const [cantidad, setCantidad] = useState<number>(invitado.pases_totales);
   const [loading, setLoading] = useState(false);
-  const [enviado, setEnviado] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
         document.body.style.overflow = 'hidden';
         setAsiste(null);
         setCantidad(invitado.pases_totales);
-        setEnviado(false);
         setLoading(false);
     }
     else {
@@ -41,7 +39,6 @@ export const ModalConfirmar: React.FC<ModalConfirmarProps> = ({ isOpen, onClose,
       }).eq('id', invitado.id);
 
     if (!error) {
-        setEnviado(true);
         setTimeout(() => {
             onClose();
             onUpdate();

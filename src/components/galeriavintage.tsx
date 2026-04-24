@@ -6,7 +6,7 @@ import foto1 from '../assets/galeria/perquin1.jpg';
 import foto2 from '../assets/galeria/perquin3.jpg';
 import foto3 from '../assets/galeria/restaurante.jpg';
 import foto4 from '../assets/galeria/perquin5.jpg';
-import foto5 from '../assets/galeria/Villa-navidad.jpg';
+import foto5 from '../assets/galeria/navidad.jpg';
 import marcovintage from '../assets/vintage-frame-neutral.png';
 
 

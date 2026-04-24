@@ -2,11 +2,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectFade, Navigation } from 'swiper/modules';
 
-import foto1 from '../assets/galeria/perquin1.jpg';
-import foto2 from '../assets/galeria/perquin3.jpg';
-import foto3 from '../assets/galeria/restaurante.jpg';
-import foto4 from '../assets/galeria/perquin5.jpg';
-import foto5 from '../assets/galeria/navidad.jpg';
+import foto1 from '../assets/perquin1.jpg';
+import foto2 from '../assets/perquin3.jpg';
+import foto3 from '../assets/restaurante.jpg';
+import foto4 from '../assets/perquin5.jpg';
+import foto5 from '../assets/navidad.jpg';
 import marcovintage from '../assets/vintage-frame-neutral.png';
 
 
@@ -14,7 +14,6 @@ const fotosBoda = [foto1, foto2, foto3, foto4, foto5];
 
 export const GaleriaVintage = () => {
   return (
-    /* Reducimos a max-w-xs (320px) para móviles y max-w-sm (384px) para PC */
     <div className="relative my-8 group mx-auto max-w-[300px] md:max-w-[380px] overflow-visible">
       
       <div className="relative aspect-[4/5] overflow-hidden rounded-md bg-white">

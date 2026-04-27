@@ -58,7 +58,7 @@ export const Invitacion = ({ invitado, onUpdate }: { invitado: Invitado; onUpdat
                 />
             </div>
         </div>
-        <div className="container-nuestrosnombres relative my-8 text-6xl font-santacatalina">
+        <div className="container-nuestrosnombres relative my-8 text-6xl font-santacatalina" translate='no'>
             <div className='absolute bottom-0 left-0 right-0 top-0 z-0 py-2'>
                 <img className='mx-auto h-full w-auto' src={ampersandimg} alt=""
                     style={{ opacity: 1, filter: 'none' }} />
@@ -66,7 +66,7 @@ export const Invitacion = ({ invitado, onUpdate }: { invitado: Invitado; onUpdat
             <div className="relative z-10">
                 <div className='relative z-10 mb-5'>
                     <div className='overflow-visible whitespace-pre-wrap' style={{opacity: 1}}>
-                        <div className='inline-block overflow-visible italic font-serif text-7xl'>
+                        <div className='inline-block overflow-visible italic font-serif text-7xl notranslate'>
                             <span className='inline-block overflow-visible' style={{ opacity: 0.8, filter: 'none' }}>R</span>
                             <span className='inline-block overflow-visible' style={{ opacity: 0.8, filter: 'none' }}>o</span>
                             <span className='inline-block overflow-visible' style={{ opacity: 0.8, filter: 'none' }}>s</span>
@@ -78,7 +78,7 @@ export const Invitacion = ({ invitado, onUpdate }: { invitado: Invitado; onUpdat
                     </div>
                 </div>
                 <div className='overflow-visible whitespace-pre-wrap relative z-20' style={{opacity: 1}}>
-                    <div className='inline-block overflow-visible italic font-serif text-7xl'>
+                    <div className='inline-block overflow-visible italic font-serif text-7xl notranslate'>
                         <span className='inline-block overflow-visible' style={{ opacity: 0.8, filter: 'none' }}>A</span>
                         <span className='inline-block overflow-visible' style={{ opacity: 0.8, filter: 'none' }}>l</span>
                         <span className='inline-block overflow-visible' style={{ opacity: 0.8, filter: 'none' }}>b</span>
@@ -89,10 +89,10 @@ export const Invitacion = ({ invitado, onUpdate }: { invitado: Invitado; onUpdat
                 </div>
             </div>
         </div>
-        <div className='container-fecha-boda relative my-8'>
+        <div className='container-fecha-boda relative my-8' translate='no'>
             <div className='mx-auto w-5/6 md:w-3/4'>
                 <div style={{opacity: 1}}>
-                    <div className='border-t border-[#bfd6ee] pt-2 text-xl tracking-widest'>
+                    <div className='border-t border-[#bfd6ee] pt-2 text-xl tracking-widest notranslate'>
                         <span className='text-vc-text opacity-30'>El</span> <span className='inline-block animate-pulse-slow'>23</span> <span className='text-vc-text opacity-30'>de</span> <span className='inline-block animate-pulse-slow'>Mayo</span> <span className='text-vc-text opacity-30'>del</span> 2026
                     </div>
                 </div>

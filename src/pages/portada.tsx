@@ -12,12 +12,12 @@ export default function Portada({ onStart, nombre }: { onStart: () => void; nomb
       <button className="bg-cover bg-center mx-auto flex h-full min-h-screen w-full max-w-md flex-col justify-center overflow-hidden bg-center bg-no-repeat cursor-pointer" 
         style={{ backgroundImage: `url(${fondoVintage})` }}
         onClick={onStart}>
-        <div className="z-10 animate-fade-in">
-            <p className="font-sans uppercase tracking-[0.15em] text-xs text-v-text mb-4">
+        <div className="z-10 animate-fade-in" translate='no'>
+            <p className="font-sans uppercase tracking-[0.15em] text-xs text-v-text mb-4 notranslate">
                 Hola <span className='font-bold italic'>{nombre}</span>,
             </p>
             
-            <h1 className="font-serif text-6xl md:text-7xl text-v-text italic leading-tight">
+            <h1 className="font-serif text-6xl md:text-7xl text-v-text italic leading-tight notranslate">
                 Albery <span className="text-5xl md:text-7xl block md:inline font-sans italic text-v-text my-2 md:my-0">&</span> Rosalba
             </h1>
 
@@ -27,7 +27,7 @@ export default function Portada({ onStart, nombre }: { onStart: () => void; nomb
             
             <div className="w-32 h-px bg-v-accent mx-auto my-12"></div>
             
-            <p className="font-serif text-3xl md:text-4xl text-v-text">
+            <p className="font-serif text-3xl md:text-4xl text-v-text notranslate">
             23 <span className="text-v-accent">.</span> Mayo <span className="text-v-accent">.</span> 2026
             </p>
             <p className="animate-pulse-slow mt-10 font-sans uppercase tracking-widest text-sm mt-4 text-v-text">
